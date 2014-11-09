@@ -1,0 +1,35 @@
+html,
+body {
+  width: 100%;
+  overflow: hidden;
+}
+svg {
+  position: absolute;
+  left: 0;
+  bottom: -6%;
+  width: 100%;
+}
+#desktop,
+.notes-on-desktop {
+  transform: translateX(-110px);
+}
+#chair {
+  -webkit-animation: popup 1.5s ease-in-out;
+}
+#desktop {
+  -webkit-animation: popup 1s ease-in-out;
+}
+.notes-on-desktop {
+  -webkit-animation: popup 1.1s ease-in-out;
+}
+@-webkit-keyframes popup {
+  0% {
+    transform: translateX(-250px);
+  }
+  70% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(-110px);
+  }
+}

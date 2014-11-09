@@ -3,150 +3,48 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 body {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #d6edea;
 }
-
-.container {
-	width: 80%;
-	margin: 0 auto;
+h1 {
+  margin: 18px;
+  font-family: "Montserrat", sans-serif;
+  color: #e92600;
+  font-size: 55px;
+  font-weight: 700;
 }
-
-.square {
-	display: inline-block;
-	width: 200px;
-	height: 200px;
-	background-color: blue;
-
+#h3 {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #30496d;
+  font-size: 44px;
+  font-weight: 400;
 }
-
-#game-field {
-	display: none;
-    height:440px;
-    width:440px;
-    border: 3px solid black;
-	border-radius: 5px;
-	background-color: #D5FAFD;
-	text-align:center;
-	
+.contain {
+  width: 85%;
+  margin: 0 auto;
 }
-.card {
-	height: 100px;
-	width: 100px;
-	border: 2px solid black;
-	border-radius: 5px;
-	margin: 3px;
-	float:left;
-}
-
-.black {
-	background-color: black;
-	height: 100px;
-	width: 100px;
-	border: 2px solid black;
-	border-radius: 5px;
-	margin: 3px;
-	float:left;
-}
-
-.navy {
-	background-color: navy;
-	height: 100px;
-	width: 100px;
-	border: 2px solid black;
-	border-radius: 5px;
-	margin: 3px;
-	float:left;
-}
-
-.red {
-	height: 100px;
-	width: 100px;
-	border: 2px solid black;
-	border-radius: 5px;
-	margin: 3px;
-	float:left;
-	background-color: red;
-}
-
-.blue {
-	height: 100px;
-	width: 100px;
-	border: 2px solid black;
-	border-radius: 5px;
-	margin: 3px;
-	float:left;
-	background-color: blue;
-}
-
-.green {
-	height: 100px;
-	width: 100px;
-	border: 2px solid black;
-	border-radius: 5px;
-	margin: 3px;
-	float:left;
-	background-color: green;
-}
-
-.orange {
-	height: 100px;
-	width: 100px;
-	border: 2px solid black;
-	border-radius: 5px;
-	margin: 3px;
-	float:left;
-	background-color: orange;
-}
-
-.yellow {
-	height: 100px;
-	width: 100px;
-	border: 2px solid black;
-	border-radius: 5px;
-	margin: 3px;
-	float:left;
-	background-color: yellow;
-}
-
-.lime {
-	height: 100px;
-	width: 100px;
-	border: 2px solid black;
-	border-radius: 5px;
-	margin: 3px;
-	float:left;
-	background-color: lime;
-}
-
-.layer {
-	
-
-    background-color: transparent;
-
-	text-align:center;
-}
-
 #start-page {
-	width: 100%;
-	position: absolute;
-	top: 30%;
-	bottom: 30%;
-	
-    background-color: white;
-	text-align:center;
+  text-align: center;
 }
-
-
-
-.cardOut {
-	height: 100px;
-	width: 100px;
-	border: 2px solid black;
-	border-radius: 5px;
-	margin: 3px;
-	float:left;
-	background-color: #CCC !important;
+#game-field {
+  margin-top: 15px;
+  width: 55%;
+}
+.tile {
+  padding: 2.7%;
+  margin: 4px 2px;
+  width: 18%;
+  height: 3em;
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+  color: #ffffff;
+  letter-spacing: 1.2;
+  font-size: 2em;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #3ec69f;
 }
