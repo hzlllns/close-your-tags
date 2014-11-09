@@ -142,7 +142,7 @@
 			</g>
 			<circle fill="#666666" cx="202.327" cy="583.969" r="9.166"/>
 			<rect x="14.258" y="336.593" fill="#C7FAFF" width="375.46" height="214.549"/>
-			<text x="177" y="460" fill="#30496d" id="h3"></text>
+			<text x="140" y="460" fill="#30496d" id="h3"></text>
 		</g>
 	</g>
 
