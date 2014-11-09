@@ -10,7 +10,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script src="js/game.js"></script>
-	<script src="js/script.js"></script>
+	
 </head>
 <body>
 
@@ -49,4 +49,5 @@
 
 	
 </body>
+<script src="js/script.js"></script>
 </html>

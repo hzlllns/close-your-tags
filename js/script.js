@@ -1,17 +1,39 @@
-var seconds = 120;
-function secondPassed() {
-    var minutes = Math.round((seconds - 30)/60);
-    var remainingSeconds = seconds % 60;
-    if (remainingSeconds < 10) {
-        remainingSeconds = "0" + remainingSeconds;  
-    }
-    document.getElementById('h3').innerHTML = minutes + ":" + remainingSeconds;
-    if (seconds == 0) {
-        clearInterval(countdownTimer);
-        document.getElementById('h3').innerHTML = "Buzz Buzz";
-    } else {
-        seconds--;
-    }
-}
+function simple_timer(sec, block, direction) {
+    var time    = sec;
+    direction   = direction || false;
+             
+    var hour    = parseInt(time / 3600);
+    if ( hour < 1 ) hour = 0;
+    time = parseInt(time - hour * 3600);
+    if ( hour < 10 ) hour = '0'+hour;
  
-var countdownTimer = setInterval('secondPassed()', 1000);
+    var minutes = parseInt(time / 60);
+    if ( minutes < 1 ) minutes = 0;
+    time = parseInt(time - minutes * 60);
+    if ( minutes < 10 ) minutes = '0'+minutes;
+ 
+    var seconds = time;
+    if ( seconds < 10 ) seconds = '0'+seconds;
+ 
+    block.innerHTML = hour+':'+minutes+':'+seconds;
+ 
+    if ( direction ) {
+        sec++;
+         setTimeout(function(){ simple_timer(sec, block, direction); }, 1000);
+    } else {
+        sec--;
+ 
+        if ( sec > 0 ) {
+            setTimeout(function(){ simple_timer(sec, block, direction); }, 1000);
+        } else {
+            alert('woops');
+        }
+    }    
+}
+
+function start_timer() {
+    var block = document.getElementById('h3');
+    simple_timer(0, block, true);
+};
+
+start_timer();
