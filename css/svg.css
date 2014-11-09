@@ -22,6 +22,15 @@ svg {
 .notes-on-desktop {
   -webkit-animation: popup 1.1s ease-in-out;
 }
+#laptop {
+  -webkit-animation: coming-right 2s ease-in-out;
+}
+#lamp {
+  -webkit-animation: coming-right 2.5s ease-in-out;
+}
+.fish {
+  -webkit-animation: move-fish 2.5s ease-in-out infinite;
+}
 @-webkit-keyframes popup {
   0% {
     transform: translateX(-250px);
@@ -31,5 +40,27 @@ svg {
   }
   100% {
     transform: translateX(-110px);
+  }
+}
+@-webkit-keyframes coming-right {
+  0% {
+    transform: translateX(500px);
+  }
+  70% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@-webkit-keyframes move-fish {
+  0% {
+    transform: translateX(0px);
+  }
+  30% {
+    transform: translateX(-40px);
+  }
+  100% {
+    transform: translateX(0px);
   }
 }
