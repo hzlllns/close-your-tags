@@ -1,5 +1,6 @@
 // game developed based on
 // http://www.codecademy.com/forum_questions/519e43b2d7d159a6e9000534
+
 var game = function() {
     var self = this;
 
@@ -196,8 +197,6 @@ var game = function() {
 	}
 
 }
-
-
 
 var instance = new game();
 

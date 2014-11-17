@@ -82,6 +82,7 @@ header {
   font-size: 2em;
   display: inline-block;
   border-radius: 5px;
+  cursor: pointer;
   perspective: 1000;
 }
 .tileOut {
@@ -94,7 +95,6 @@ header {
   background-color: #3ec69f;
   border-radius: 5px;
 }
-/* flip speed goes here */
 .flipper {
   transition: 0.6s;
   transform-style: preserve-3d;
@@ -102,7 +102,6 @@ header {
   position: relative;
   border-radius: 5px;
 }
-/* hide back of pane during swap */
 .front,
 .back {
   backface-visibility: hidden;
@@ -110,15 +109,11 @@ header {
   top: 0;
   left: 0;
 }
-/* front pane, placed above back */
 .front {
   z-index: 2;
-  /* for firefox 31 */
-
   transform: rotateY(0deg);
   padding-top: 18%;
 }
-/* back, initially hidden pane */
 .back {
   transform: rotateY(180deg);
 }
