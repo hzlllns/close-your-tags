@@ -9,14 +9,12 @@
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script src="js/game.js"></script>
-	
 </head>
 <body>
-
     <header id="start-page" class="contain">
-        <h1>Close your tags</h1>
-        
+		<div class="close"> 
+        	<h1 class="title"><em>Close your tags</em></h1>
+    	</div>
     </header>
 
     <section id="game-field" class="contain">
