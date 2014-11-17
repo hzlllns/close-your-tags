@@ -21,6 +21,13 @@ var game = function() {
 
     self.config =  { timeOpen: 1500, Timeout: 2000 }
 
+    // AUDIO
+    var audioBGMusic = new Audio();
+    audioBGMusic.src = './audio/lullatone.mp3';
+    audioBGMusic.loop = true; // we want the background music to loop
+	var chord = new Audio();
+    chord.src = './audio/chord.mp3';
+
     self.shuffleTags = function() {
 
     	var tags = self.arrTags;
@@ -70,10 +77,10 @@ var game = function() {
             $('.layer').css('z-index', -1);
         }, self.config.Timeout);
 
-
+        audioBGMusic.play();
         self.gamePlay();
         self.startTimer();
-
+        
     }
 
     self.init = function(){
@@ -122,7 +129,7 @@ var game = function() {
 
 				self.selected1.animate({opacity: 0}, 1000);
 				self.selected2.animate({opacity: 0}, 1000);
-
+				chord.play();
 	            self.timeCoin = self.timeCoin + 1;
 
 	        } 
@@ -196,6 +203,9 @@ var game = function() {
     	self.gameTimer(0, block, true);
 	}
 
+
+
+
 }
 
 var instance = new game();
@@ -207,3 +217,4 @@ $(document).ready(function() {
     	instance.init();
     });
 });
+
