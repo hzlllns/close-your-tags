@@ -27,5 +27,9 @@
 	<?php include "svg/grunt.php"; ?>
 	<?php include "svg/ninja.php"; ?>
 	
+	<audio id="bgmusic" loop="loop">        
+	    <source src="audio/lullatone.mp3" type="audio/mp3">
+	    Your browser does not support the <code>audio</code> element.
+	</audio>
 </body>
 </html>
