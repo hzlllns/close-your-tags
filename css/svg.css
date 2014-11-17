@@ -29,7 +29,9 @@ svg {
   -webkit-animation: coming-right 2.5s ease-in-out;
 }
 .fish {
-  -webkit-animation: move-fish 2.5s ease-in-out infinite;
+  -webkit-animation: move-fish 5s ease-in-out infinite;
+  transform-origin: 50% 50%;
+  display: inline-block;
 }
 @-webkit-keyframes popup {
   0% {
@@ -55,12 +57,26 @@ svg {
 }
 @-webkit-keyframes move-fish {
   0% {
-    transform: translateX(0px);
+    transform: translateX(5px) rotateY(0deg);
   }
   30% {
-    transform: translateX(-40px);
+    transform: translateX(-30px);
+  }
+  50% {
+    transform: translateX(-38px) rotateY(180deg);
+  }
+  90% {
+    transform: translateX(-6px) rotateY(180deg);
   }
   100% {
-    transform: translateX(0px);
+    transform: translateX(5px) rotateY(0deg);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
   }
 }

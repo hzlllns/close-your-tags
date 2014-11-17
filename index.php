@@ -14,40 +14,24 @@
 </head>
 <body>
 
-    <header id="start-page" class="contain">
+    <header class="contain">
         <h1>Close your tags</h1>
-        
     </header>
 
+
     <section id="game-field" class="contain">
-    	<p class="tile">&lt;p&gt;</p>
-    	<p class="tile">&lt;div&gt;</p>
-    	<p class="tile">&lt;script&gt;</p>
-    	<p class="tile">&lt;head&gt;</p>
-    	<p class="tile">&lt;p&gt;</p>
-		
-		<p class="tile">&lt;p&gt;</p>
-		<p class="tile">&lt;p&gt;</p>
-		<p class="tile">&lt;/p&gt;</p>
-		<p class="tile">&lt;/script&gt;</p>
-		<p class="tile">&lt;/div&gt;</p>
 
-		<p class="tile">&lt;p&gt;</p>
-		<p class="tile">&lt;/body&gt;</p>
-		<p class="tile">&lt;p&gt;</p>
-		<p class="tile">&lt;p&gt;</p>
-		<p class="tile">&lt;/a&gt;</p>
-
-		<p class="tile">&lt;p&gt;</p>
-		<p class="tile">&lt;p&gt;</p>
-		<p class="tile">&lt;/head&gt;</p>
-		<p class="tile">&lt;p&gt;</p>
-		<p class="tile">&lt;body&gt;</p>	
     </section>
 
+	
+	
+	<?php include "svg/start-page.php"; ?>
 	<?php include "svg/composition.php"; ?>
+	
+	<?php include "svg/noob.php"; ?>
+	<?php include "svg/grunt.php"; ?>
+	<?php include "svg/ninja.php"; ?>
 
 	
 </body>
-<script src="js/script.js"></script>
 </html>

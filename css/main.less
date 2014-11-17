@@ -7,6 +7,7 @@
 @navy: 				#30496d;
 @mint:  			#3ec69f;
 @white: 			#fff;
+@green: 			#70b543;
 
 //typography
 @heading-font: 		"Montserrat", sans-serif;
@@ -27,14 +28,37 @@ body {
 
 }
 
+#composition,
+#grunt,
+#ninja,
+#noob{
+	display: none;
+}
+
+.heading,
 h1 {
 	margin: 18px;
 	font-family: @heading-font;
 	color: @red;
 	font-size: 55px;
 	font-weight: 700;
-	
 }
+
+h2 {
+	font-family: @tags-font;
+	font-size: 25px;
+	color: @navy;
+}
+
+p {
+	cursor: pointer;
+}
+
+svg {
+	z-index: -1;
+}
+
+
 
 #h3 {
 	margin-top: 20px;
@@ -50,10 +74,31 @@ h1 {
 	margin: 0 auto;
 }
 
+// start page
+
+.begin-btn {
+	display: inline-block;
+	margin-top: 1em;
+	text-decoration: none;
+	font-family: @heading-font;
+	font-size: 30px;
+	color: @white;
+	background-color: @green;
+	padding: 1em 4em;
+	border-radius: 4px;
+}
+
+#start {
+	text-align: center;
+	vertical-align: middle;
+	width: 40%;
+	margin: 10% auto 0 auto;
+}
 
 // header
 
-#start-page {
+header {
+	display: none;
 	text-align: center;
 }
 
@@ -62,10 +107,10 @@ h1 {
 #game-field {
 	margin-top: 15px;
 	width: 55%;
+	display: none;
 }
 
 .tile {
-	padding: 30% 0;
 	margin: 4px 2px;
 	width: 18%;
 	height: 3em;
@@ -76,10 +121,52 @@ h1 {
 	font-size: 2em;
 	display: inline-block;
 	border-radius: 5px;
-	background-color: @mint;
+	
+	perspective: 1000;
+}
+
+.tileOut {
+	transform: rotateY(180deg);
 }
 
 
 
+.front, .back {
+	width: 100%;
+	height: 3.2em;
+	background-color: @mint;
+	border-radius: 5px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	background-color: @mint;
+	position: relative;
+	border-radius: 5px;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+	padding-top: 18%;
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+	//background-color: #70B543;
+}
 
 
