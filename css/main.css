@@ -11,7 +11,8 @@ body {
 #composition,
 #grunt,
 #ninja,
-#noob {
+#noob,
+#start_page {
   display: none;
 }
 .heading,

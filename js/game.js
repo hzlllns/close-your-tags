@@ -202,6 +202,7 @@ var instance = new game();
 
 
 $(document).ready(function() {
+	$('#start_page').fadeIn();
     $('#startBtn').click(function() {
     	instance.init();
     });
